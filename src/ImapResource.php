@@ -16,8 +16,8 @@ final class ImapResource implements ImapResourceInterface
      * @var resource
      */
     private $resource;
-    private ?MailboxInterface $mailbox           = null;
-    private static ?string $lastMailboxUsedCache = null;
+    private $mailbox           = null;
+    private static $lastMailboxUsedCache = null;
 
     /**
      * Constructor.

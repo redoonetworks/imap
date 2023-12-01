@@ -12,15 +12,15 @@ use Ddeboer\Imap\Exception\ResourceCheckFailureException;
  */
 final class Server implements ServerInterface
 {
-    private string $hostname;
-    private string $port;
-    private string $flags;
+    private $hostname;
+    private $port;
+    private $flags;
     /**
      * @var mixed[]
      */
-    private array $parameters;
-    private int $options;
-    private int $retries;
+    private $parameters;
+    private $options;
+    private $retries;
 
     /**
      * Constructor.

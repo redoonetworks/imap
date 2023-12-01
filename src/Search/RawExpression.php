@@ -12,7 +12,7 @@ final class RawExpression implements ConditionInterface
     /**
      * Text to be used for the condition.
      */
-    private string $expression;
+    private $expression;
 
     /**
      * @param string $expression text for the condition

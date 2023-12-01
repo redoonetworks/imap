@@ -11,7 +11,7 @@ abstract class AbstractMessage extends AbstractPart
     /**
      * @var null|Attachment[]
      */
-    private ?array $attachments = null;
+    private $attachments = null;
 
     /**
      * Get message headers.

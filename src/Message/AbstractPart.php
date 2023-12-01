@@ -41,27 +41,27 @@ abstract class AbstractPart implements PartInterface
         'filename*' => true,
     ];
 
-    protected ImapResourceInterface $resource;
-    private bool $structureParsed = false;
+    protected $resource;
+    private $structureParsed = false;
     /**
      * @var AbstractPart[]
      */
-    private array $parts = [];
-    private string $partNumber;
-    private int $messageNumber;
-    private \stdClass $structure;
-    private Parameters $parameters;
-    private ?string $type        = null;
-    private ?string $subtype     = null;
-    private ?string $encoding    = null;
-    private ?string $disposition = null;
-    private ?string $description = null;
+    private $parts = [];
+    private $partNumber;
+    private $messageNumber;
+    private $structure;
+    private $parameters;
+    private $type        = null;
+    private $subtype     = null;
+    private $encoding    = null;
+    private $disposition = null;
+    private $description = null;
     /** @var null|int|string */
     private $bytes;
-    private ?string $lines          = null;
-    private ?string $content        = null;
-    private ?string $decodedContent = null;
-    private int $key                = 0;
+    private $lines          = null;
+    private $content        = null;
+    private $decodedContent = null;
+    private $key                = 0;
 
     /**
      * Constructor.

@@ -16,16 +16,16 @@ use Ddeboer\Imap\Exception\MailboxDoesNotExistException;
  */
 final class Connection implements ConnectionInterface
 {
-    private ImapResourceInterface $resource;
-    private string $server;
+    private $resource;
+    private $server;
     /**
      * @var null|MailboxInterface[]
      */
-    private ?array $mailboxes = null;
+    private $mailboxes = null;
     /**
      * @var null|array<int|string, \stdClass>
      */
-    private ?array $mailboxNames = null;
+    private $mailboxNames = null;
 
     /**
      * Constructor.

@@ -18,9 +18,9 @@ use Ddeboer\Imap\Search\LogicalOperator\All;
  */
 final class Mailbox implements MailboxInterface
 {
-    private ImapResourceInterface $resource;
-    private string $name;
-    private \stdClass $info;
+    private $resource;
+    private $name;
+    private $info;
 
     /**
      * Constructor.

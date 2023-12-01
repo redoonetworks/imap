@@ -12,7 +12,7 @@ class Parameters extends \ArrayIterator
     /**
      * @var array<string, string>
      */
-    private static array $attachmentCustomKeys = [
+    private static $attachmentCustomKeys = [
         'name*'     => 'name',
         'filename*' => 'filename',
     ];

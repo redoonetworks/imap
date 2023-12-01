@@ -11,7 +11,7 @@ use Ddeboer\Imap\Message\PartInterface;
  */
 final class MessageIterator extends \ArrayIterator implements MessageIteratorInterface
 {
-    private ImapResourceInterface $resource;
+    private $resource;
 
     /**
      * Constructor.

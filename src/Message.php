@@ -18,12 +18,12 @@ use Ddeboer\Imap\Exception\MessageUndeleteException;
  */
 final class Message extends Message\AbstractMessage implements MessageInterface
 {
-    private bool $messageNumberVerified = false;
-    private int $imapMsgNo              = 0;
-    private bool $structureLoaded       = false;
-    private ?Message\Headers $headers   = null;
-    private ?string $rawHeaders         = null;
-    private ?string $rawMessage         = null;
+    private $messageNumberVerified = false;
+    private $imapMsgNo              = 0;
+    private $structureLoaded       = false;
+    private $headers   = null;
+    private $rawHeaders         = null;
+    private $rawMessage         = null;
 
     /**
      * Constructor.

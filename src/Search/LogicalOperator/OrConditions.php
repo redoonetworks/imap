@@ -17,7 +17,7 @@ final class OrConditions implements ConditionInterface
      *
      * @var ConditionInterface[]
      */
-    private array $conditions = [];
+    private $conditions = [];
 
     /**
      * @param ConditionInterface[] $conditions
